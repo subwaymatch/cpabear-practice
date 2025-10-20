@@ -1,6 +1,6 @@
-import { LoginForm } from "@/components/auth/login-form"
-import Image from "next/image"
-import Link from "next/link"
+import { LoginForm } from "@/components/auth/login-form";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -9,7 +9,7 @@ export default function LoginPage() {
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2">
             <Image
-              src="/placeholder-logo.svg"
+              src="/images/cpabear-neutral.svg"
               alt="CPA Bear logo"
               width={32}
               height={32}

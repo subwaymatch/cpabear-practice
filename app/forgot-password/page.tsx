@@ -1,6 +1,6 @@
-import { ForgotPasswordForm } from "@/components/auth/forgot-password-form"
-import Image from "next/image"
-import Link from "next/link"
+import { ForgotPasswordForm } from "@/components/auth/forgot-password-form";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ForgotPasswordPage() {
   return (
@@ -9,7 +9,7 @@ export default function ForgotPasswordPage() {
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2">
             <Image
-              src="/placeholder-logo.svg"
+              src="/images/cpabear-neutral.svg"
               alt="CPA Bear logo"
               width={32}
               height={32}
