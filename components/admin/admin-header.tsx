@@ -1,6 +1,7 @@
 "use client"
 
-import { Brain, LogOut } from "lucide-react"
+import Image from "next/image"
+import { LogOut } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import {
@@ -43,7 +44,14 @@ export function AdminHeader({ user }: AdminHeaderProps) {
     <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="flex h-16 items-center justify-between px-6">
         <Link href="/admin" className="flex items-center gap-2">
-          <Brain className="h-6 w-6 text-primary" />
+          <Image
+            src="/placeholder-logo.svg"
+            alt="CPA Bear logo"
+            width={24}
+            height={24}
+            className="h-6 w-6"
+            priority
+          />
           <span className="text-lg font-bold text-foreground">CPA Admin</span>
         </Link>
 

@@ -1,6 +1,6 @@
-import { LoginForm } from "@/components/auth/login-form";
-import { Brain } from "lucide-react";
-import Link from "next/link";
+import { LoginForm } from "@/components/auth/login-form"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function LoginPage() {
   return (
@@ -8,7 +8,14 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2">
-            <Brain className="h-8 w-8 text-primary" />
+            <Image
+              src="/placeholder-logo.svg"
+              alt="CPA Bear logo"
+              width={32}
+              height={32}
+              className="h-8 w-8"
+              priority
+            />
             <span className="text-xl font-bold text-foreground">CPA Bear</span>
           </Link>
           <h1 className="mt-6 text-2xl font-bold text-foreground">
