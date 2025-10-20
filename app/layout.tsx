@@ -1,6 +1,15 @@
-import type React from "react";
-import type { Metadata } from "next";
-import "./globals.css";
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+
+import "./globals.css"
+import { cn } from "@/lib/utils"
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: "CPA Bear Test Bank",
@@ -14,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-sans antialiased">{children}</body>
+      <body className={cn("font-sans antialiased", inter.variable)}>{children}</body>
     </html>
   );
 }

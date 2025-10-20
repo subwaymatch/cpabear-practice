@@ -1,12 +1,13 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { BookOpen, Brain, CheckCircle, Users } from "lucide-react";
+} from "@/components/ui/card"
+import { BookOpen, CheckCircle, Users } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -15,7 +16,14 @@ export default function HomePage() {
       <header className="border-b border-border">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
           <div className="flex items-center gap-2">
-            <Brain className="h-8 w-8 text-primary" />
+            <Image
+              src="/placeholder-logo.svg"
+              alt="CPA Bear logo"
+              width={32}
+              height={32}
+              className="h-8 w-8"
+              priority
+            />
             <span className="text-xl font-bold text-foreground">CPA Bear</span>
           </div>
           <nav className="flex items-center gap-4">

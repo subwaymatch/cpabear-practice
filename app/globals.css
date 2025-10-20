@@ -79,5 +79,6 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: var(--font-inter, system-ui), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
 }
